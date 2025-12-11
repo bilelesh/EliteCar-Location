@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>EliteCar – Location de Voitures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">EliteCar Location</div>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#cars">Véhicules</a>
+			<a href="#review">Avis</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Louez la voiture idéale</h1>
+            <p>Qualité, fiabilité, prix abordables. Partez en toute confiance.</p>
+            <a href="#cars" class="btn">Voir les véhicules</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="cars" class="cars-section">
+            <h2>Nos véhicules</h2>
+
+            <div class="cars-grid">
+
+                <div class="car-card">
+                    <img src="https://www.bgalocation.fr/public/img/big/nos-types-de-vehicules-prestiges583da372722ba.png" alt="Mercedes Classe GLE">
+                    <h3>Mercedes Classe GLE</h3>
+                    <p>Compacte, économique, idéale pour la ville.</p>
+                    <div class="price">159€ / jour</div>
+                    <button class="btn-secondary" onclick="window.location.href='louer.html?car=gle'">Louer</button>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://rent.bmw.fr/media/BMW/CatalogVehicle/F39_base.png" alt="BMW RENT">
+                    <h3>BMW RENT</h3>
+                    <p>Confort et élégance pour vos longs trajets.</p>
+                    <div class="price">179€ / jour</div>
+                    <button class="btn-secondary" onclick="window.location.href='louer.html?car=bmw'">Louer</button>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7fZHwImTrH4bArCI-Vsm6IJf422CK8RoFg&s" alt="Audi RS3">
+                    <h3>Audi RS3</h3>
+                    <p>Espace, puissance et sécurité.</p>
+                    <div class="price">219€ / jour</div>
+                    <button class="btn-secondary" onclick="window.location.href='louer.html?car=rs3'">Louer</button>
+                </div>
+				<div class="car-card">
+    <img src="https://mini-uvl-production.s3.amazonaws.com/media/cache/02/79/027961c93bb56f51a6577308310d9033.jpg" 
+         alt="Renault Captur 2024">
+    <h3>Mini Cooper S</h3>
+    <p>Compacte, vive et fun.</p>
+    <div class="price">95€ / jour</div>
+    <button class="btn-secondary" onclick="window.location.href='louer.html?car=captur'">Louer</button>
+</div>
+
+<div class="car-card">
+    <img src="https://www.turbo.fr/sites/default/files/2022-09/OETTINGER-VW-Golf-R-1.jpg" 
+         alt="Toyota Corolla Hybride">
+    <h3>Golf 8R Tunning</h3>
+    <p>Sportive, agressive et ultra performante.</p>
+    <div class="price">169€ / jour</div>
+    <button class="btn-secondary" onclick="window.location.href='louer.html?car=corolla'">Louer</button>
+</div>
+
+<div class="car-card">
+    <img src="https://cdn.motor1.com/images/mgl/7Zm8xo/s1/2024-renault-rafale-exterior.jpg" 
+         alt="Renault Rafale SUV">
+    <h3>Renault Rafale SUV</h3>
+    <p>Moderne, spacieux et performant.</p>
+    <div class="price">139€ / jour</div>
+    <button class="btn-secondary" onclick="window.location.href='louer.html?car=huracan'">Louer</button>
+</div>
+<div class="car-card">
+    <img src="https://platform.cstatic-images.com/in/v2/stock_photos/681a042f-9795-4768-bbf3-84d76f80285e/6ad54efb-efc7-46c9-b132-22f508d43abe.png"
+         alt="Tesla Model X">
+    <h3>Tesla Model X</h3>
+    <p>Électrique, silencieuse, autonomie exceptionnelle.</p>
+    <div class="price">249€ / jour</div>
+    <button class="btn-secondary" onclick="window.location.href='louer.html?car=modelx'">Louer</button>
+</div>
+
+<div class="car-card">
+    <img src="https://avalnews.com/wp-content/uploads/2023/02/Screen-Shot-2023-02-10-at-7.24.28-PM.png"
+         alt="Range Rover Evoque Sport">
+    <h3>Jeep Wrangler</h3>
+    <p>Compact, élégant et puissant.</p>
+    <div class="price">145€ / jour</div>
+    <button class="btn-secondary" onclick="window.location.href='louer.html?car=wrangler'">Louer</button>
+</div>
+            </div>
+        </section>
+<section id="review" class="reviews">
+    <h2>Service Client & Avis</h2>
+
+    <!-- 1ère rangée : 3 avis visibles par défaut -->
+    <div class="review-row">
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">Service client réactif et très professionnel.</p>
+            <div class="author">– Julien M.</div>
+        </div>
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">Très bon accueil et voiture impeccable.</p>
+            <div class="author">– Sarah L.</div>
+        </div>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">Rapide, simple et efficace. Excellent service client.</p>
+            <div class="author">– Mehdi R.</div>
+        </div>
+    </div>
+
+    <!-- Rangées supplémentaires cachées par défaut -->
+    <div class="extra-reviews" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+        <!-- Rangée 2 -->
+        <div class="review-row">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">Voiture impeccable, très bon service.</p>
+                <div class="author">– Emma K.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">Accueil chaleureux et professionnel.</p>
+                <div class="author">– Lucas P.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">Très satisfait de la location.</p>
+                <div class="author">– Chloé B.</div>
+            </div>
+        </div>
+
+        <!-- Rangée 3 -->
+        <div class="review-row">
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">Véhicule conforme à la description.</p>
+                <div class="author">– Antoine M.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">Service rapide et efficace.</p>
+                <div class="author">– Laura D.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">Je recommande vivement EliteCar.</p>
+                <div class="author">– Maxime R.</div>
+            </div>
+        </div>
+
+        <!-- Rangée 4 -->
+        <div class="review-row">
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">Très belle expérience de location.</p>
+                <div class="author">– Inès F.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">Voiture propre et service impeccable.</p>
+                <div class="author">– Thomas L.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">Super expérience, je reviendrai !</p>
+                <div class="author">– Sophie V.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boutons centrés -->
+    <div style="text-align:center; margin-top:20px;">
+        <button id="show-more" class="btn-secondary">Plus</button>
+        <button id="show-less" class="btn-secondary" style="display:none;">Fermer</button>
+    </div>
+</section>
+	       <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p>Email : contact@elitecar.fr</p>
+            <p>Téléphone : 06 67 32 15 35</p>
+        </section>
+    </main>
+	<footer>
+        <p>© 2025 AutoLoc – Tous droits réservés</p>
+    </footer>
+<script>
+const showMore = document.getElementById('show-more');
+const showLess = document.getElementById('show-less');
+const extraReviews = document.querySelector('.extra-reviews');
+
+showMore.addEventListener('click', function() {
+    extraReviews.style.display = 'block';
+    // Animation fluide : max-height
+    const scrollHeight = extraReviews.scrollHeight + "px";
+    extraReviews.style.maxHeight = scrollHeight;
+
+    showMore.style.display = 'none';
+    showLess.style.display = 'inline-block';
+});
+
+showLess.addEventListener('click', function() {
+    extraReviews.style.maxHeight = "0"; // replie avec animation
+    // Après la fin de la transition, cache complètement
+    extraReviews.addEventListener('transitionend', function hide() {
+        extraReviews.style.display = 'none';
+        extraReviews.removeEventListener('transitionend', hide);
+    });
+
+    showMore.style.display = 'inline-block';
+    showLess.style.display = 'none';
+});
+</script>
+</body>
+</html>

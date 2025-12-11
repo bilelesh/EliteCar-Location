@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver votre voiture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f7f9;
+            color: #333;
+        }
+
+        header {
+            background: #1e90ff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        main {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #1e90ff;
+        }
+
+        #car-price {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        form label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: 500;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        form input:focus {
+            border-color: #1e90ff;
+            box-shadow: 0 0 5px rgba(30,144,255,0.3);
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            border: none;
+            background: #1e90ff;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        form button:hover {
+            background: #187bcd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AutoLoc – Réservation</h1>
+</header>
+
+<main>
+    <h2 id="car-name">Réserver votre voiture</h2>
+    <p id="car-price"></p>
+
+    <form id="reservation-form">
+        <label>Nom complet :</label>
+        <input type="text" placeholder="Votre nom" required>
+
+        <label>Email :</label>
+        <input type="email" placeholder="Votre email" required>
+
+        <label>Date de début :</label>
+        <input type="date" required>
+
+        <label>Date de fin :</label>
+        <input type="date" required>
+
+        <button type="submit">Louer maintenant</button>
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 AutoLoc – Tous droits réservés</p>
+</footer>
+
+<script>
+const cars = {
+    gle: { name: "Mercedes Classe GLE", price: 159 },
+    bmw: { name: "BMW RENT", price: 179 },
+    rs3: { name: "Audi RS3", price: 219 }
+};
+
+// Récupérer la voiture choisie depuis l'URL
+const params = new URLSearchParams(window.location.search);
+const carKey = params.get('car');
+
+const carName = document.getElementById('car-name');
+const carPrice = document.getElementById('car-price');
+
+if(cars[carKey]) {
+    carName.textContent = "Réserver " + cars[carKey].name;
+    carPrice.textContent = "Prix : " + cars[carKey].price + "€ / jour";
+}
+
+// Formulaire : simple message de confirmation
+const form = document.getElementById('reservation-form');
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    alert(`Merci ! Vous avez réservé ${cars[carKey].name}.`);
+});
+</script>
+
+</body>
+</html>
+
+
