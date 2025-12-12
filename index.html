@@ -9,6 +9,17 @@
 </head>
 <body>
     <header>
+	<!-- Bouton flottant pour changer de thème -->
+<button id="toggle-theme" class="theme-btn">Changer de thème</button>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById('toggle-theme');
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+    });
+});
+</script>
         <div class="logo">EliteCar Location</div>
         <nav>
             <a href="#">Accueil</a>
@@ -224,5 +235,13 @@ showLess.addEventListener('click', function() {
     showLess.style.display = 'none';
 });
 </script>
+<!-- Cadre flottant avec QR code -->
+<div class="floating-qr">
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.youtube.com/watch?v=RKcW3t3uw2w" 
+      alt="QR Code vers la vidéo YouTube"
+    />
+    <p>Scannez-moi !</p>
+</div>
 </body>
 </html>
